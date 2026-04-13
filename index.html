@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+    <header>
+        <h1>📚 Sistema de Biblioteca</h1>
+    </header>
+
+    <main>
+        <section id="cadastro">
+            <h2>Cadastrar Novo Livro</h2>
+            <form id="form-cadastro">
+                <div class="form-group">
+                    <input type="text" id="titulo" placeholder="Título" required>
+                    <input type="text" id="autor" placeholder="Autor" required>
+                    <input type="number" id="ano" placeholder="Ano" required>
+                    <button type="submit">Adicionar à Coleção</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="listagem">
+            <h2>Livros no Acervo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Ano</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-corpo">
+                    </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projeto Biblioteca CRUD</p>
+    </footer>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
